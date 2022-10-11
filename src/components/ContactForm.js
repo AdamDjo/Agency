@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { init } from "@emailjs/browser";
-init(process.env.ID);
+
 const ContactForm = () => {
   const form = useRef();
 
