@@ -4,9 +4,7 @@ import { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 const Project = (props) => {
-  const [currentProject, setcurrentProject] = useState(
-    projectsData[props.pnumber]
-  );
+  const [currentProject] = useState(projectsData[props.pnumber]);
   const [left, setLeft] = useState();
   const [top, setTop] = useState();
   const [size, setSize] = useState();
